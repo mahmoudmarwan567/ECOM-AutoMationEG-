@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33130.400
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECOM.API", "ECOM.API\ECOM.API.csproj", "{FDCC3AA5-3DD2-446C-9164-306A36B84171}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Enities", "Enities\Enities.csproj", "{6E308780-AE47-42B9-A4FF-4850866DD5ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECOM.Web", "ECOM.Web\ECOM.Web.csproj", "{404C3E82-190E-4E03-91E1-14282ED4B300}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FDCC3AA5-3DD2-446C-9164-306A36B84171}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDCC3AA5-3DD2-446C-9164-306A36B84171}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDCC3AA5-3DD2-446C-9164-306A36B84171}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDCC3AA5-3DD2-446C-9164-306A36B84171}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E308780-AE47-42B9-A4FF-4850866DD5ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E308780-AE47-42B9-A4FF-4850866DD5ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E308780-AE47-42B9-A4FF-4850866DD5ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E308780-AE47-42B9-A4FF-4850866DD5ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{404C3E82-190E-4E03-91E1-14282ED4B300}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{404C3E82-190E-4E03-91E1-14282ED4B300}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{404C3E82-190E-4E03-91E1-14282ED4B300}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{404C3E82-190E-4E03-91E1-14282ED4B300}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {49756CD9-871C-409A-9C6C-022AA74DEA32}
+	EndGlobalSection
+EndGlobal

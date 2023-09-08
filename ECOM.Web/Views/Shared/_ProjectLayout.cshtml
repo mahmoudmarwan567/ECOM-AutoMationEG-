@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]  AutoMation-EG</title>
+    @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/site.css" />*@
+    <title>Electro - HTML Ecommerce Template</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="~/electro-master/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="~/electro-master/css/slick.css" />
+    <link type="text/css" rel="stylesheet" href="~/electro-master/css/slick-theme.css" />
+    <link type="text/css" rel="stylesheet" href="~/electro-master/css/nouislider.min.css" />
+    <link rel="stylesheet" href="~/electro-master/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="~/electro-master/css/style.css" />
+</head>
+<body>
+    <style>
+        ::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
+            background-color: #CCCCCC;
+        }
+
+        ::-webkit-scrollbar {
+            width: 12px;
+            background-color: #F5F5F5;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: #D62929;
+            background-image: -webkit-linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.4) 50%, transparent, transparent)
+        }
+    </style>
+    <header>
+        @*<div id="top-header">
+                <div class="container">
+                    <ul class="header-links pull-left">
+                        <li><a href="#"><i class="fa fa-phone"></i> +021-95-51-84</a></li>
+                        <li><a href="#"><i class="fa fa-envelope-o"></i> email@email.com</a></li>
+                        <li><a href="#"><i class="fa fa-map-marker"></i> 1734 Stonecoal Road</a></li>
+                    </ul>
+                    <ul class="header-links pull-right">
+                        <li><a href="#"><i class="fa fa-dollar"></i> USD</a></li>
+                        <li><a href="#"><i class="fa fa-user-o"></i> My Account</a></li>
+                    </ul>
+                </div>
+            </div>*@
+        <!-- /TOP HEADER -->
+        <!-- MAIN HEADER -->
+        <div id="header">
+            <!-- container -->
+            <div class="container">
+                <!-- row -->
+                <div class="row">
+                    <!-- LOGO -->
+                    <div class="col-md-3">
+                        <div class="header-search" >
+                            <h2 style="color:white">Auto Mation EG</h2>
+                        </div>
+                    </div>
+                    <!-- /LOGO -->
+                    <!-- SEARCH BAR -->
+                    <div class="col-md-6"style="padding:0px">
+                        @(await Component.InvokeAsync("SearchCategory"))
+                        
+                    </div>
+                    <!-- /SEARCH BAR -->
+                    <!-- ACCOUNT -->
+                    <div class="col-md-3 clearfix"style="padding:0px">
+                        @(await Component.InvokeAsync("BarIconsActions"))
+                    </div>
+                    <!-- /ACCOUNT -->
+                </div>
+                <!-- row -->
+            </div>
+            <!-- container -->
+        </div>
+        <!-- /MAIN HEADER -->
+    </header>
+    <!-- /HEADER -->
+    <!-- NAVIGATION -->
+    <nav id="navigation">
+        <!-- container -->
+        <div class="container">
+            <!-- responsive-nav -->
+            <div id="responsive-nav">
+                <!-- NAV -->
+                <ul class="main-nav nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                </ul>
+                <!-- /NAV -->
+            </div>
+            <!-- /responsive-nav -->
+        </div>
+        <!-- /container -->
+    </nav>
+
+    <!-- /BREADCRUMB -->
+    <!-- SECTION -->
+    <div class="section">
+        <!-- container -->
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /NEWSLETTER -->
+    <!-- FOOTER -->
+    <footer id="footer">
+        @(await Component.InvokeAsync("HomeFooter"))
+    </footer>
+    <!-- /FOOTER -->
+    <!-- jQuery Plugins -->
+    <script src="~/electro-master/js/jquery.min.js"></script>
+    <script src="~/electro-master/js/bootstrap.min.js"></script>
+    <script src="~/electro-master/js/slick.min.js"></script>
+    <script src="~/electro-master/js/nouislider.min.js"></script>
+    <script src="~/electro-master/js/jquery.zoom.min.js"></script>
+    <script src="~/electro-master/js/main.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
